@@ -2,13 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def plot_graph(csv_data, x_column, y_column):
-    """
-    Generate a bar chart from the CSV data.
-    :param csv_data: Uploaded file object
-    :param x_column: Column for the x-axis
-    :param y_column: Column for the y-axis
-    :return: Path to the saved plot image
-    """
+   
     try:
         df = pd.read_csv(csv_data.name)
         # Plot the graph
