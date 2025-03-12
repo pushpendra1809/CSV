@@ -4,30 +4,15 @@ from llm_integration import ask_llm
 from graph_plotting import plot_graph
 
 def process_csv(file):
-    """
-    Process the uploaded CSV file.
-    :param file: Uploaded file object
-    :return: DataFrame or error message
-    """
+   
     return load_csv(file)
 
 def process_question(question, csv_data):
-    """
-    Process the user's question using the LLM.
-    :param question: User's question
-    :param csv_data: DataFrame containing CSV data
-    :return: LLM-generated answer
-    """
+    
     return ask_llm(question, csv_data)
 
 def process_graph(csv_data, x_column, y_column):
-    """
-    Generate a graph based on the CSV data.
-    :param csv_data: Uploaded file object
-    :param x_column: Column for the x-axis
-    :param y_column: Column for the y-axis
-    :return: Path to the saved plot image
-    """
+   
     return plot_graph(csv_data, x_column, y_column)
 
 # Custom CSS for advanced styling
